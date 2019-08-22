@@ -1,0 +1,16 @@
+import java.io.*;
+public class Lucky {
+   public static void main(String []ar)throws IOException{
+       BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+       int x = Integer.parseInt(br.readLine());
+       int a[] = {4,7,44,47,74,77,444,474,744,774,447,477,747,777};
+       boolean flag=false;
+       for(int i=0; i<14; i++){
+           if(x%a[i]==0) {
+               flag = true;
+               break;
+           }
+       }
+       System.out.println(flag==true?"YES":"NO");
+   }
+}
