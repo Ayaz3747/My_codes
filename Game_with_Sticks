@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Stick {
+    public static void main(String[]ar){
+        Scanner sc  = new Scanner(System.in);
+        int n = sc.nextInt();
+        int m = sc.nextInt();
+        int min = n;
+        if(n>m){
+            min = m;
+        }
+        if(min%2==0){
+            System.out.println("Malvika");
+        }
+        else
+            System.out.println("Akshat");
+    }
+}
