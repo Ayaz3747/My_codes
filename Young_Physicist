@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Young_Physician {
+    public static void main(String[]arg) {
+        Scanner sc = new Scanner(System.in);
+        int sum = 0;
+        int sx = 0, sy = 0, sz = 0;
+        int n = sc.nextInt();
+        int a[][] = new int[3][n];
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < 3; j++) {
+                if (j == 0)
+                    sx += sc.nextInt();
+                else if (j == 1)
+                    sy += sc.nextInt();
+                else
+                    sz += sc.nextInt();
+
+            }
+        }
+        System.out.println((sx == 0 && sy == 0 && sz == 0) ? "YES" : "NO");
+
+
+    }
+
+
+
+}
