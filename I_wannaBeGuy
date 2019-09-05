@@ -1,0 +1,27 @@
+
+
+import java.util.*;
+public class Solution {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int total = sc.nextInt();
+        int n = sc.nextInt(),i;
+        ArrayList<Integer> al = new ArrayList<>();
+        for(i=0;i<n;i++)
+            al.add(sc.nextInt());
+        n = sc.nextInt();
+        for(i=0;i<n;i++)
+            al.add(sc.nextInt());
+        Collections.sort(al);
+        int check =1,x=0;
+        n = al.size();
+        for(i=0;i<n;i++){
+            if(x<=total&&al.get(i)==check)
+            {x = check;check++;}
+        }
+
+        System.out.println(x==total?"I become the guy.":"Oh, my keyboard!");
+    }
+}
